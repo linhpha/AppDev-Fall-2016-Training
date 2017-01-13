@@ -1,5 +1,6 @@
 package app.linh.com.helloworldapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,9 +22,12 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Hello!", Toast.LENGTH_LONG).show();
-                String message = "HELLO WORLD!!!";
-                textView.setText(message);
+                //Toast.makeText(getApplicationContext(), "Hello!", Toast.LENGTH_LONG).show();
+                //String message = "HELLO WORLD!!!";
+                //textView.setText(message);
+                final Intent popupIntent = new Intent(getApplicationContext(), PopupActivity.class);
+                popupIntent.putExtra(PopupActivity.EXTRA_NAME, "Linh");
+                startActivity(popupIntent);
             }
         });
     }
