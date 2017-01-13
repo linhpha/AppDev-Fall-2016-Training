@@ -19,8 +19,11 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show Greetings"
+        android:text="Click me!!"
         android:layout_below="@+id/hello_text_view"
-        android:onClick="showGreetings"/>
+        android:id="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        />
 
 </RelativeLayout>
