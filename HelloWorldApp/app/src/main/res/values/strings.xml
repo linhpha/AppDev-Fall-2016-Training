@@ -2,4 +2,5 @@
     <string name="app_name">HelloWorldApp</string>
     <string name="button_txt">Click me!</string>
     <string name="toast_txt">Hello</string>
+    <string name="title_activity_popup">PopupActivity</string>
 </resources>

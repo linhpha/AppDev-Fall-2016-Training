@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 
 public class MainActivity extends AppCompatActivity {
-
+    public static final String EXTRA_NAME = "extra_name";
      TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
