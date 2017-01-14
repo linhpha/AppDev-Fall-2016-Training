@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        textView = (TextView) findViewById(R.id.hello_text_view);
+        //textView = (TextView) findViewById(R.id.hello_text_view);
         Button btn = (Button) findViewById(R.id.button);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,8 +26,12 @@ public class MainActivity extends AppCompatActivity {
                 //String message = "HELLO WORLD!!!";
                 //textView.setText(message);
                 final Intent popupIntent = new Intent(getApplicationContext(), PopupActivity.class);
+                String name = getIntent().getStringExtra(EXTRA_NAME);
+               // TextView txt = (TextView) findViewById(R.id.text);
+               // txt.setText("Hi " + name);
                 popupIntent.putExtra(PopupActivity.EXTRA_NAME, "Linh");
                 startActivity(popupIntent);
+
             }
         });
     }
